@@ -2,9 +2,22 @@
 
 *{
 	color:white;
+
 }
-
-
+.cen {
+	
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	text-align:center;
+	
+	
+}
+.right{
+	
+	float:right;
+	margin-right:30vh;
+	margin-left:10vh;
+}
 .bg{
 	background: url('bg.jpeg') no-repeat;
 	width: 100%;
@@ -15,10 +28,23 @@
 	}
 	
 .form-container {
-	border:0px solid #FFF;
-	padding: 50px 60px;
+	border:5px solid #FFF;
+	
 	margin-top:20vh;
 	-webkit-box-shadow: 0px 0px 28px 11px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 28px 11px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 28px 11px rgba(0,0,0,0.75);
 	}
+.tableBox {
+	
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+.navbar{
+	background-color: #ccc;
+}
+
+	.nounderline {
+  text-decoration: none !important
+}

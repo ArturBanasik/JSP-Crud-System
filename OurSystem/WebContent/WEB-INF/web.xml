@@ -4,15 +4,56 @@
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
-  
-  
   <servlet-mapping>
-  <servlet-name>default</servlet-name>
-  <url-pattern>*.css</url-pattern>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.css</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.js</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ControllerServlet</servlet-name>
+    <servlet-class>pl.arturbanasik.addCustomer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/Error.jsp</location>
+  </error-page>
+  <servlet>
+    <description></description>
+    <display-name>NewServlet</display-name>
+    <servlet-name>NewServlet</servlet-name>
+    <servlet-class>pl.arturbanasik.addCustomer.NewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewServlet</servlet-name>
+    <url-pattern>/NewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddServlet</display-name>
+    <servlet-name>AddServlet</servlet-name>
+    <servlet-class>pl.arturbanasik.addCustomer.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddServlet</servlet-name>
+    <url-pattern>/AddServlet</url-pattern>
   </servlet-mapping>
   
-    <servlet-mapping>
-  <servlet-name>default</servlet-name>
-  <url-pattern>*.js</url-pattern>
-  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginDB</display-name>
+    <servlet-name>LoginDB</servlet-name>
+    <servlet-class>pl.arturbanasik.Provider.LoginDB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginDB</servlet-name>
+    <url-pattern>/LoginDB</url-pattern>
+    </servlet-mapping>
+  
 </web-app>

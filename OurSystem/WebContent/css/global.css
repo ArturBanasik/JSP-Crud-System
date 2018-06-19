@@ -4,6 +4,12 @@
 	color:white;
 }
 
+body{
+	
+	
+	
+	background-color: #333b40;
+}
 
 .bg{
 	background: url('http://www.uniregistry.link/wp-content/uploads/2015/07/car-bg-1439x893.jpg') no-repeat;
@@ -21,4 +27,6 @@
 	-webkit-box-shadow: 0px 0px 28px 11px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 28px 11px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 28px 11px rgba(0,0,0,0.75);
+	margin-bottom:10vh;
 	}
+	
